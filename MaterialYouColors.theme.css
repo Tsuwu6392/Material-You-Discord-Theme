@@ -77,3 +77,109 @@
     --blue-345-hsl: var(--myc-background-hue) calc(var(--saturation-factor, 1)*100%*calc(1/calc(var(--myc-link-lightness)+0.5))) min(calc(49.4%*var(--myc-link-lightness)), 89.4%) !important;
     --blue-430-hsl: var(--myc-background-hue) calc(var(--saturation-factor, 1)*100%*calc(1/calc(var(--myc-link-lightness)+0.5))) min(calc(45.3%*var(--myc-link-lightness)), 85.3%) !important;
 }
+
+.lineClamp2Plus-2SCQmH {
+    -webkit-line-clamp: 10000000!important;
+}
+
+[data-list-item-id="guildsnav___home"]>.childWrapper-1j_1ub {
+  background: url("https://cdn.discordapp.com/icons/1015060230222131221/f0204a918c6c9c9a43195997e97d8adf.webp") center/cover;
+}
+.homeIcon-r0w4ny {
+  display: none;
+}
+
+[class^=menu-],[class^=submenu-] {
+  background: none;
+}
+[class^=submenu-] {
+  margin: 0 -8px;
+}
+.theme-dark [class^=menu-]::after,.theme-dark [class^=submenu-]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+.theme-light [class^=menu-]::after,.theme-light [class^=submenu-]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background: rgba(245, 245, 245, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+[class^=backdrop-] ~ .theme-light[class*=layer-]>[class^=menu-] {
+  background: rgba(245, 245, 245, 0.7);
+}
+[class^=backdrop-] ~ .theme-dark[class*=layer-]>[class^=menu-] {
+  background: rgba(10, 10, 10, 0.7);
+}
+[class^=backdrop-] ~ [class*=layer-]>[class^=menu-]::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+.section-3FmfOT, .divider-1tWBgZ, .scroller-1jBQYo {
+  z-index: 2;
+}
+
+.form-3gdLxP {
+  padding: 0px;
+}
+
+.channelTextArea-1VQBuV {
+  margin-bottom: 0px;
+}
+
+/* Make the height consistent */
+.inner-NQg18Y {
+  padding-top: 4px;
+  min-height: 49px;
+}
+
+/* Move the slowmode/typing indicator */
+.base-3bcbY3 {
+  top: -24px;
+  left: 0px;
+  width: fit-content;
+  padding-right: 9px;
+  border-radius: 0 8px 0 0;
+  background-color: var(--channeltextarea-background);
+}
+
+.scrollableContainer-15eg7h {
+  border-radius: 0px;
+  min-height: 53px;
+}
+
+/*
+The below influences the settings button, optional but makes the line consistent
+across the entire client
+*/
+/* Move settings (3rd, hence :nth-child(3)) button */
+.container-YkUktl:last-of-type>.flex-2S1XBF.flex-3BkGQD :nth-child(3) {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+}
+
+/* Decrease height of server list to make room for settings button */
+.guilds-2JjMmN {
+    margin-bottom: 53px;
+}
+
+/* Make the background distinct */
+.container-1eFtFS {
+  background: var(--background-secondary);
+}
